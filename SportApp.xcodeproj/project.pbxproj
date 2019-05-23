@@ -12,6 +12,14 @@
 		F2B5E91D229688E300F88AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B5E91B229688E300F88AA4 /* Main.storyboard */; };
 		F2B5E91F229688E600F88AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5E91E229688E600F88AA4 /* Assets.xcassets */; };
 		F2B5E922229688E600F88AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B5E920229688E600F88AA4 /* LaunchScreen.storyboard */; };
+		F2B5E92B2296894000F88AA4 /* Situps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5E92A2296894000F88AA4 /* Situps.swift */; };
+		F2B5E92D2296894C00F88AA4 /* Squats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5E92C2296894C00F88AA4 /* Squats.swift */; };
+		F2B5E92F2296896400F88AA4 /* Pushups.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5E92E2296896400F88AA4 /* Pushups.swift */; };
+		F2B5E9312296897200F88AA4 /* Running.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5E9302296897200F88AA4 /* Running.swift */; };
+		F2B5E9332296898E00F88AA4 /* SportExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5E9322296898E00F88AA4 /* SportExercises.swift */; };
+		F2B5E935229689AD00F88AA4 /* ExercisesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5E934229689AD00F88AA4 /* ExercisesEnum.swift */; };
+		F2B5E937229689CD00F88AA4 /* ExerciseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5E936229689CD00F88AA4 /* ExerciseFactory.swift */; };
+		F2B5E93A22968DF600F88AA4 /* ExercisesMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5E93922968DF600F88AA4 /* ExercisesMemento.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		F2B5E91E229688E600F88AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B5E921229688E600F88AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2B5E923229688E600F88AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B5E92A2296894000F88AA4 /* Situps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Situps.swift; sourceTree = "<group>"; };
+		F2B5E92C2296894C00F88AA4 /* Squats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
+		F2B5E92E2296896400F88AA4 /* Pushups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pushups.swift; sourceTree = "<group>"; };
+		F2B5E9302296897200F88AA4 /* Running.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running.swift; sourceTree = "<group>"; };
+		F2B5E9322296898E00F88AA4 /* SportExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportExercises.swift; sourceTree = "<group>"; };
+		F2B5E934229689AD00F88AA4 /* ExercisesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesEnum.swift; sourceTree = "<group>"; };
+		F2B5E936229689CD00F88AA4 /* ExerciseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFactory.swift; sourceTree = "<group>"; };
+		F2B5E93922968DF600F88AA4 /* ExercisesMemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesMemento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 		F2B5E916229688E300F88AA4 /* SportApp */ = {
 			isa = PBXGroup;
 			children = (
+				F2B5E93822968D0500F88AA4 /* SportSDK */,
 				F2B5E917229688E300F88AA4 /* AppDelegate.swift */,
 				F2B5E919229688E300F88AA4 /* ViewController.swift */,
 				F2B5E91B229688E300F88AA4 /* Main.storyboard */,
@@ -62,6 +79,29 @@
 				F2B5E923229688E600F88AA4 /* Info.plist */,
 			);
 			path = SportApp;
+			sourceTree = "<group>";
+		};
+		F2B5E9292296891000F88AA4 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5E92A2296894000F88AA4 /* Situps.swift */,
+				F2B5E92C2296894C00F88AA4 /* Squats.swift */,
+				F2B5E92E2296896400F88AA4 /* Pushups.swift */,
+				F2B5E9302296897200F88AA4 /* Running.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		F2B5E93822968D0500F88AA4 /* SportSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5E9292296891000F88AA4 /* Exercises */,
+				F2B5E9322296898E00F88AA4 /* SportExercises.swift */,
+				F2B5E934229689AD00F88AA4 /* ExercisesEnum.swift */,
+				F2B5E936229689CD00F88AA4 /* ExerciseFactory.swift */,
+				F2B5E93922968DF600F88AA4 /* ExercisesMemento.swift */,
+			);
+			path = SportSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B5E9332296898E00F88AA4 /* SportExercises.swift in Sources */,
+				F2B5E92D2296894C00F88AA4 /* Squats.swift in Sources */,
+				F2B5E9312296897200F88AA4 /* Running.swift in Sources */,
+				F2B5E92F2296896400F88AA4 /* Pushups.swift in Sources */,
 				F2B5E91A229688E300F88AA4 /* ViewController.swift in Sources */,
 				F2B5E918229688E300F88AA4 /* AppDelegate.swift in Sources */,
+				F2B5E935229689AD00F88AA4 /* ExercisesEnum.swift in Sources */,
+				F2B5E92B2296894000F88AA4 /* Situps.swift in Sources */,
+				F2B5E937229689CD00F88AA4 /* ExerciseFactory.swift in Sources */,
+				F2B5E93A22968DF600F88AA4 /* ExercisesMemento.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
